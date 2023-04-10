@@ -18,6 +18,7 @@ class HomePage extends Page {
      * e.g. to login using username and password
      */
      async selectProduct () {
+        
         await expect(this.product).toBeDisplayed()
         await this.product.click();
     }

@@ -14,6 +14,7 @@ describe('My  application', () => {
 
         await HomePage.open()
         await HomePage.validateLogo()
+        HomePage.browserScroll(724,3659)
         await HomePage.selectProduct()
         await ProductPage.addProductQuantityToCart(30)
         await cartPage.clickProceedToCheckout()

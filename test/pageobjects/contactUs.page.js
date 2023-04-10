@@ -1,3 +1,4 @@
+import homePage from './home.page.js';
 import Page from './page.js';
 
 /**
@@ -23,6 +24,7 @@ class contactUsPage extends Page {
         await this.inputEmail.setValue(email)
         await this.inputSubject.setValue(subject)
         await this.inputMessage.setValue(message)
+        homePage.browserScroll(240,661)
         await this.btnSubmit.click()
     }
 

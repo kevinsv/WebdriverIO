@@ -16,6 +16,10 @@ export default class Page {
         return browser.acceptAlert()
     }
 
+    browserScroll(x,y){
+        return browser.scroll(x,y)
+    }
+
     open (path) {
         return browser.url('https://automationexercise.com/')
     }

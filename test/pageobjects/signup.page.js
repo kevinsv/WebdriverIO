@@ -1,3 +1,4 @@
+import homePage from './home.page.js';
 import Page from './page.js';
 
 /**
@@ -55,6 +56,7 @@ class SignUpPage extends Page {
         await this.dropdownCountry.selectByAttribute('value', 'United States');
         await this.inputState.setValue('PA');
         await this.inputCity.setValue('Pottstown');
+        homePage.browserScroll(430,1508);
         await this.inputZipCode.setValue('19464');
         await this.inputMobileNumber.setValue('6107530741');
         await this.btnCreateAccount.click();
