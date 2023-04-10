@@ -8,8 +8,12 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
 
-    async sleep(ms){
-        browser.sleep(ms)
+    browserSleep(ms){
+        return browser.sleep(ms)
+    }
+
+    browserAcceptAlert(ms){
+        return browser.acceptAlert()
     }
 
     open (path) {

@@ -30,7 +30,7 @@ class MenuHeaderPage extends Page {
     }
 
     async clickContactUs () {
-        await this.btnLogin.click();
+        await this.btnContactUs.click();
     }
 }
 
