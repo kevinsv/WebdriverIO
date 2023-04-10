@@ -1,17 +1,16 @@
 allure-report/*
 allure-results/*
-node-modules/*
+node_modules/*
 allure-report/
 allure-results/
-node-modules/
+node_modules/
 allure-report
 allure-results
-node-modules
+node_modules
 ./allure-report/*
 ./allure-results/*
-./node-modules/*
-
+./node_modules/*
 ./allure-report/
 ./allure-results/
-./node-modules/
+./node_modules/
 
