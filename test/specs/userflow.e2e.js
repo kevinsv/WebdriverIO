@@ -10,13 +10,15 @@ import contactUsPage from '../pageobjects/contactUs.page.js'
 
 describe('My  application', () => {
     it('User Flow', async () => {
+        let number = Math.random() * 1000;
+
         await HomePage.open()
         await HomePage.validateLogo()
         await HomePage.selectProduct()
         await ProductPage.addProductQuantityToCart(30)
         await cartPage.clickProceedToCheckout()
         await cartPage.clickRegisterAndLogin()
-        await LoginPage.signup('Kevin', 'webdriverio-1967@yopmail.com')
+        await LoginPage.signup('Kevin', 'webdriverio-19' + number + '@yopmail.com')
         await signupPage.createAccountInformation()
         await signupPage.clickContinueInAccountCreated()
         await headermenuPage.clickCart()
@@ -26,9 +28,9 @@ describe('My  application', () => {
         await paymentPage.clickContinue()
         await headermenuPage.clickLogout()
         await headermenuPage.clickLogin()
-        await LoginPage.login('webdriverio-1967@yopmail.com' , 'webdriverIOTest01')
+        await LoginPage.login('webdriverio-19' + number + '@yopmail.com' , 'webdriverIOTest01')
         await headermenuPage.clickContactUs()
-        await contactUsPage.completeContactUs('Test','test@tst.com','subject test','message test')
+        await contactUsPage.completeContactUs('Test','webdriverio-19' + number + '@yopmail.com','subject test','message test')
         HomePage.browserAcceptAlert()
     })
 })
