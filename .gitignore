@@ -1,3 +1,10 @@
 allure-report/*
 allure-results/*
 node-modules/*
+allure-report/
+allure-results/
+node-modules/
+allure-report
+allure-results
+node-modules
+
